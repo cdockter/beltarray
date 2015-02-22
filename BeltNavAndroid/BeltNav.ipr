@@ -159,21 +159,17 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>Android 4.4.2 Google APIs</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="libraryTable">
+    <library name="com.fasterxml.jackson.core:com.springsource.com.fasterxml.jackson.core.jackson-databind:2.0.2" type="repository">
+      <properties maven-id="com.fasterxml.jackson.core:com.springsource.com.fasterxml.jackson.core.jackson-databind:2.0.2" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/com.springsource.com.fasterxml.jackson.core.jackson-databind/2.0.2/com.springsource.com.fasterxml.jackson.core.jackson-databind-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/com.springsource.com.fasterxml.jackson.core.jackson-annotations/2.0.2/com.springsource.com.fasterxml.jackson.core.jackson-annotations-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/com.springsource.com.fasterxml.jackson.core.jackson-core/2.0.2/com.springsource.com.fasterxml.jackson.core.jackson-core-2.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </project>
 
