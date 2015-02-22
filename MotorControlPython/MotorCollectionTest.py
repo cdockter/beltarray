@@ -10,3 +10,4 @@ motorCollection.activate(0, 7, 2)
 time.sleep(6)
 print "cleaing up"
 factory.cleanup()
+exit()
