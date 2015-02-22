@@ -1,5 +1,8 @@
 import RPi.GPIO as GPIO
 import math
+import Motor
+import MotorSlot
+
 
 class MotorFactory(object):
 	def __init__(self):

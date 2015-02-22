@@ -1,3 +1,5 @@
+import Motor
+
 class MotorSlot(object):
 	def __init__(self, radiansFromAhead, motor):
 		self.radiansFromAhead = radiansFromAhead
