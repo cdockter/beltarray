@@ -33,7 +33,7 @@ write_byte(2, 0b00000000) # Continuous sampling
 while True:
     x_out = read_word_2c(3)
     y_out = read_word_2c(7)
+    z_out = read_word_2c(5)
+
     print x_out, y_out, z_out
     time.sleep(0.1)
-
-
