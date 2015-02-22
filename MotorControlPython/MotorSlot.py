@@ -4,12 +4,12 @@ import math
 class MotorSlot(object):
 	def __init__(self, radiansFromAhead, motor):
 		self.tou = 2 * math.pi
-		self.radiansFromAhead = normalize(radiansFromAhead)
+		self.radiansFromAhead = self.normalize(radiansFromAhead)
 		self.motor = motor
 	
 	def conditinalActivate(self, radiansPosition, radiansArch, durationInMs):
-		maxPosition = normalize(radiansPosition + (radiansArch/2))
-		minPosition = normalize(radiansPosition - (radiansArch/2))
+		maxPosition = self.normalize(radiansPosition + (radiansArch/2))
+		minPosition = self.normalize(radiansPosition - (radiansArch/2))
 
 		motorPosition = self.radiansFromAhead
 
