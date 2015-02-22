@@ -8,9 +8,9 @@ class MotorSlot(object):
 	def conditinalActivate(self, radiansPosition, radiansArch, durationInMs):
 		maxPosition = radiansPosition - (radiansArch/2)
 		minPosition = radiansPosition + (radiansArch/2)
-		print "max: " + maxPosition
-		print "min: " + minPosition
-		print "current position: " + radiansPosition
+		print "max: " + str(maxPosition)
+		print "min: " + str(minPosition)
+		print "current position: " + str(radiansPosition)
 		if(self.radiansFromAhead > minPosition and self.radiansFromAhead < maxPosition):
 			self.motor.start(durationInMs)
 	
