@@ -15,7 +15,7 @@ class MotorSlot(object):
 
 		print "max: " + str(maxPosition)
 		print "min: " + str(minPosition)
-		print "current position: " + str(self.radiansFromAhead)
+		print "current position: " + str(motorPosition)
 		if(motorPosition > minPosition and motorPosition < maxPosition):
 			self.motor.start(durationInMs)
 	
