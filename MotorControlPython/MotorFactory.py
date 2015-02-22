@@ -10,10 +10,10 @@ class MotorFactory(object):
 		self.gpio.cleanup()
 		self.gpio.setmode(gpio.BCM)
 
-	def cleanup():
+	def cleanup(self):
 		self.gpio.cleanup()
 
-	def getMotors():
+	def getMotors(self):
 		motors = []
 		motors.add(MotorSlot(math.pi/8, Motor(17, self.gpio))
 		motors.add(MotorSlot(math.pi * 15/8, Motor(27, self.gpio))
