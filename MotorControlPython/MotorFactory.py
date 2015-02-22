@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import math
-import Motor
-import MotorSlot
+from Motor import Motor
+from MotorSlot import MotorSlot
 
 
 class MotorFactory(object):

@@ -6,11 +6,11 @@ class Motor(object):
 		self.gpio = gpio
 		self.gpio.setup(id, gpio.OUT)
 
-	def start(durationInMs):
+	def start(self, durationInMs):
 		self.gpio.output(self.id, True)
 		threading.Timer(durationInMs*1000, self.stop).start()
 
-	def stop():
+	def stop(self):
 		self.gpio.output(self.id, False)
 
 		

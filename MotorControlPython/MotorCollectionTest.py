@@ -1,4 +1,5 @@
-import MotorFactory
+from MotorFactory import MotorFactory
+from MotorCollection import MotorCollection
 
 factory = MotorFactory()
 motorCollection = MotorCollection(factory.getMotors())
