@@ -8,9 +8,6 @@ class MotorSlot(object):
 		self.motor = motor
 	
 	def conditinalActivate(self, radiansDirection, radiansArch, durationInMs):
-		maxPosition = self.normalize(radiansPosition + (radiansArch/2))
-		minPosition = self.normalize(radiansPosition - (radiansArch/2))
-
 		normailzedDirection = nomralize(radiansDirection)
 		offset = self.radiansFromAhead - normailzedDirection
 
