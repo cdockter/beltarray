@@ -10,7 +10,7 @@ class MotorSlot(object):
 		minPosition = radiansPosition + (radiansArch/2)
 		print "max: " + str(maxPosition)
 		print "min: " + str(minPosition)
-		print "current position: " + str(radiansPosition)
+		print "current position: " + str(self.radiansFromAhead)
 		if(self.radiansFromAhead > minPosition and self.radiansFromAhead < maxPosition):
 			self.motor.start(durationInMs)
 	
