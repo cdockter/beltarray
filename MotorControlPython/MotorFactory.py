@@ -18,7 +18,7 @@ class MotorFactory(object):
 		motors.append(MotorSlot(math.pi/8, Motor(17, self.gpio)))
 		motors.append(MotorSlot(math.pi * 15/8, Motor(27, self.gpio)))
 		motors.append(MotorSlot(math.pi * 1/4, Motor(22, self.gpio)))
-		motors.append(MotorSlot(math.pi * 5/4, Motor(23, self.gpio)))
+		motors.append(MotorSlot(math.pi * 3/2, Motor(23, self.gpio)))
 		# motors.append(Motor(24, self.gpio))
 		# motors.append(Motor(25, self.gpio))
 		return motors
