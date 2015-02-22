@@ -9,7 +9,7 @@ class Motor(object):
 	def start(self, durationInMs):
 		print "activting motor"
 		self.gpio.output(self.id, True)
-		threading.Timer(durationInMs*100, self.stop).start()
+		threading.Timer(durationInMs/1000, self.stop).start()
 
 	def stop(self):
 		print "deactivating motor"
