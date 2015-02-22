@@ -8,7 +8,7 @@ class MotorFactory(object):
 	def __init__(self):
 		self.gpio = GPIO
 		self.gpio.cleanup()
-		self.gpio.setmode(gpio.BCM)
+		self.gpio.setmode(self.gpio.BCM)
 
 	def cleanup(self):
 		self.gpio.cleanup()
