@@ -6,8 +6,8 @@ class MotorSlot(object):
 		self.motor = motor
 	
 	def conditinalActivate(self, radiansPosition, radiansArch, durationInMs):
-		maxPosition = radiansPosition - (radiansArch/2)
-		minPosition = radiansPosition + (radiansArch/2)
+		maxPosition = radiansPosition + (radiansArch/2)
+		minPosition = radiansPosition - (radiansArch/2)
 		print "max: " + str(maxPosition)
 		print "min: " + str(minPosition)
 		print "current position: " + str(self.radiansFromAhead)
