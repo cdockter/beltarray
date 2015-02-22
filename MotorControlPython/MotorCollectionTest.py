@@ -5,7 +5,7 @@ import time
 factory = MotorFactory()
 motorCollection = MotorCollection(factory.getMotors())
 
-motorCollection.activate(0, 7, 500)
+motorCollection.activate(0, 7, 1000)
 
 time.sleep(6)
 print "cleaing up"
