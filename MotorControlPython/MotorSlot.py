@@ -10,9 +10,10 @@ class MotorSlot(object):
 	def conditinalActivate(self, radiansDirection, radiansArch, durationInMs):
 		normalizedDirection = self.normalize(radiansDirection)
 		normalizedArch = self.normalize(radiansArch)
-		offset = self.normalize((self.radiansFromAhead - normalizedDirection) - normalizedArch/2)
+		offset = self.normalize((self.radiansFromAhead - normalizedDirection) - radiansArch/2)
 
-		print "offect: " + str(offset)
+		print "offset: " + str(offset)
+		print "arch" + str(radiansArch)
 		print "direction: " + str(normalizedDirection)
 		print "motor position: " + str(self.radiansFromAhead)
 
