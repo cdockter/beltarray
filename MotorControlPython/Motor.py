@@ -7,12 +7,12 @@ class Motor(object):
 		self.gpio.setup(id, gpio.OUT)
 
 	def start(self, durationInMs):
-		print "activting motor: " + str(self.id)
+		#print "activting motor: " + str(self.id)
 		self.gpio.output(self.id, True)
 		threading.Timer(durationInMs/1000, self.stop).start()
 
 	def stop(self):
-		print "deactivating motor"
+		#print "deactivating motor"
 		self.gpio.output(self.id, False)
 
 		

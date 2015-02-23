@@ -12,10 +12,10 @@ class MotorSlot(object):
 		normalizedArch = self.normalize(radiansArch)
 		offset = self.normalize((self.radiansFromAhead - normalizedDirection) - radiansArch/2)
 
-		print "offset: " + str(offset)
-		print "arch" + str(radiansArch)
-		print "direction: " + str(normalizedDirection)
-		print "motor position: " + str(self.radiansFromAhead)
+		#print "offset: " + str(offset)
+		#print "arch" + str(radiansArch)
+		#print "direction: " + str(normalizedDirection)
+		#print "motor position: " + str(self.radiansFromAhead)
 
 		if(offset < radiansArch or radiansDirection == self.radiansFromAhead):
 			self.motor.start(durationInMs)
