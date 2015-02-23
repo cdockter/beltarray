@@ -15,6 +15,7 @@ while continues:
 
 	if("w" == command):
 		motorCollection.activate(0, math.pi/8.0, 1000)
+		motorCollection.activate(math.pi * 15.0/8.0, math.pi/8.0, 1000)
 	if("a" == command):	
 		motorCollection.activate(math.pi/2.0, math.pi/4, 1000)
 	if("d" == command):	
