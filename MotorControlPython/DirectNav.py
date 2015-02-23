@@ -7,11 +7,11 @@ import math
 factory = MotorFactory()
 motorCollection = MotorCollection(factory.getMotors())
 
-continue = True
-while continue:
+continues = True
+while continues:
 	command = raw_input("next: ")
 	if("q" == command):
-		continue = False
+		continues = False
 
 	if("w" == command):
 		motorCollection.activate(0, math.pi/8, 1000)
