@@ -8,7 +8,7 @@ class MotorSlot(object):
 		self.motor = motor
 	
 	def conditinalActivate(self, radiansDirection, radiansArch, durationInMs):
-		normailzedDirection = self.nomralize(radiansDirection)
+		normailzedDirection = self.normalize(radiansDirection)
 		normalizedArch = self.normalize(radiansArch)
 		offset = normalize((self.radiansFromAhead - normailzedDirection) - normalizedArch/2)
 
