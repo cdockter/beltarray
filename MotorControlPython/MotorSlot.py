@@ -17,7 +17,7 @@ class MotorSlot(object):
 		print "direction: " + str(normalizedDirection)
 		print "motor position: " + str(self.radiansFromAhead)
 
-		if(offset < radiansArch):
+		if(offset < radiansArch or radiansDirection == self.radiansFromAhead):
 			self.motor.start(durationInMs)
 
 		#if(motorPosition > minPosition and motorPosition < maxPosition ):
